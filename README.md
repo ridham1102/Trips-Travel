@@ -1,16 +1,16 @@
 # Trips-Travel
-**Problem Statement:**
+ # **Problem Statement:**
 
 The notebook starts by outlining the problem: "Trips & Travel.Com" wants to predict which customers are likely to purchase a new Wellness Tourism Package to make their marketing efforts more efficient.
 
-**Data Collection:**
+ # **Data Collection:**
 
 This section focuses on loading the dataset.
 
 *   **Import Libraries:** Imports all the necessary Python libraries for data manipulation (pandas, numpy), visualization (matplotlib, seaborn, plotly), and machine learning (sklearn). It also includes settings to ignore warnings and display plots inline in the notebook.
 *   **Load Data:** Loads the `Travel.csv` file into a pandas DataFrame named `df`.
 
-**Data Cleaning:**
+ # **Data Cleaning:**
 
 This section focuses on preparing the data for modeling by handling inconsistencies and missing values.
 
@@ -30,7 +30,7 @@ This section focuses on preparing the data for modeling by handling inconsistenc
 *   **Verify No Nulls:** Verifies that all missing values have been successfully handled by checking the null counts again.
 *   **Display Head after Cleaning:** Displays the first row of the DataFrame after completing the missing value handling.
 
-**Feature Engineering:**
+ # **Feature Engineering:**
 
 This section creates a new feature and drops redundant ones.
 
@@ -38,7 +38,7 @@ This section creates a new feature and drops redundant ones.
 *   **Display Head after Feature Engineering:** Displays the first two rows of the DataFrame to show the new 'TotalVisiting' column and the removal of the original columns.
 *   **Display Info after Feature Engineering:** Provides information about the DataFrame after feature engineering to show the updated column list and data types.
 
-**Feature Identification:**
+ # **Feature Identification:**
 
 This section identifies the types of features in the dataset.
 
@@ -47,14 +47,14 @@ This section identifies the types of features in the dataset.
 *   **Identify Discrete Features:** Identifies and prints the number of discrete numerical features (columns with 25 or fewer unique values).
 *   **Identify Continuous Features:** Identifies and prints the number of continuous numerical features.
 
-**Data Splitting:**
+ # **Data Splitting:**
 
 This section prepares the data for model training and evaluation.
 
 *   **Separate Features and Target:** Separates the features (all columns except 'ProdTaken') into DataFrame `x` and the target variable ('ProdTaken') into Series `y`.
 *   **Train-Test Split:** Splits the data into training and testing sets using `train_test_split` from scikit-learn, with a test size of 20% and a random state for reproducibility.
 
-**Preprocessing:**
+ # **Preprocessing:**
 
 This section prepares the data for the machine learning model.
 
@@ -62,7 +62,7 @@ This section prepares the data for the machine learning model.
 *   **ColumnTransformer:** Sets up a `ColumnTransformer` to apply different preprocessing steps to different column types. In this case, it's configured to apply One-Hot Encoding to the categorical features. A `StandardScaler` for numerical features is commented out but included as an option.
 *   **Apply Preprocessing:** Applies the defined preprocessing steps to the training and testing feature sets (`x_train` and `x_test`).
 
-**Random Forest Implementation:**
+ # **Random Forest Implementation:**
 
 This section focuses on building and evaluating the Random Forest model.
 
